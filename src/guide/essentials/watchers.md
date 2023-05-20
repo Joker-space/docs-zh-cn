@@ -18,7 +18,7 @@ export default {
   },
   watch: {
     // 每当 question 改变时，这个函数就会执行
-    question(newQuestion, oldQuestion) {
+    question(newQuestion) {
       if (newQuestion.includes('?')) {
         this.getAnswer()
       }
